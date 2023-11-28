@@ -1,0 +1,59 @@
+--candidateId=2
+--directory=C:\Users\Pc\Desktop\irace2018\irace\execDir
+--algorithm=GA
+--fitnessFunction=reg
+--populationSize=29
+--crossoverProbability=0.929
+--mutationProbability=0.014
+--selectionGA=2-tournament
+--crossoverGA=intermediate
+--mutationGA=MaxEquals2Uniform
+--generationReplacement=Generational
+--elitistRateGA=0.009
+02/12, 18:06:37
+[HookRun] Parameters used:
+--directory=execDir
+--algorithm=GA
+--selectionGA=2-tournament
+--crossoverGA=intermediate
+--mutationGA=MaxEquals2Uniform
+--elitistRateGA=0.009
+--fitnessFunction=reg
+--candidateId=2
+--populationSize=29
+--maxEvaluations=0
+--crossoverProbability=0.929
+--mutationProbability=0.014
+--generationReplacement=Generational
+
+Teste Curitiba!
+OK: Recuperou objeto ODMatrix de 'cwb odmatrix.dat'!
+
+OK: Recuperou objeto VirtualSensors de 'cwb virt sen.dat'!
+
+OK: Mudando teste para rede fechada...
+ATENCAO: arestasSensor reduzidas para 71, por ser numero maximo de sensores da rede cadastrada.
+PROC: Preparando para iniciar GA_71s__0t0... 02/12, 18:06:37
+ERROR: Não há registros de viagens para recuperar! (ODmatrix.calcMatrixClust)
+INFO: Return antecipado, n=arestasSensorGAMM=71 e t=tempoPrioriGAMM=0; mov.lenght=71 (VirtualSensors.gerArestaMaisMovimentadasIndex)
+INFO: descobrirODparIndArestaMaisMov = 1074 casos! - 191/900 pares O-D cobertos
+INFO: Existem 1073 relações Prob_OD_aresta!
+OK: Iniciando GA _Alterado_ com 1 runs! Population size: 29
+Generations: 103448
+OD =900
+Sensores=71
+GA_71s__0t0; 02/12, 18:06:37
+RUN GA_71s__0t0 1/1: Menor custo inicial é 24125.443575976766(RMSE: 377.0803725462332; MAE: 20.65461297603341; GEH: 15.121332221899724) id do melhor indivíduo=15
+RUN GA_71s__0t0 1/1: Menor  custo  final é 24125.443575976766
+---02/12 18:08:08-----------------------------------------------------
+reg(objetivo): 24125.443575976766
+RMSE: 377.0803725462332
+MAE: 20.65461297603341
+GEH: 15.121332221899724
+pGEH5: 0.19718309859154928
+R2Links: 0.3912906628844208
+R2Odm: 0.08687124026966515
+------------------------------------------------------ ´idBest=15
+
+ALERT: Salvando última MOD resposta. Não a melhor.
+Fitness final (reg) = 24125.443575976766

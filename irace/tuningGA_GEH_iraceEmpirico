@@ -1,0 +1,189 @@
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+> require(devtools)
+> #install_version("irace", version = "1.07", repos = "http://cran.us.r-project.org")
+> library(irace)
+> irace.cmdline("--hook-run hook-runPSO.bat")
+irace	version: 1.07.1202
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file "./tune-conf" has been found and will be read
+# 0 expression(s) specifying forbidden configurations read from 'C:/Users/Pc/Desktop/irace2018/irace/forbidden'
+# 2018-11-08 22:17:31 -02: Initialization
+# nbIterations: 3
+# minNbSurvival: 3
+# nbParameters: 3
+# seed: 624001481
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+# 2018-11-08 22:17:32 -02: Iteration 1 of 3
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 100
+# nbCandidates: 16
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|         16|          9|      3.453|         16|00:12:29|
+|x|          2|         16|          9|      3.888|         32|00:11:41|
+|x|          3|         16|          9|      3.774|         48|00:11:29|
+|x|          4|         16|          9|       3.83|         64|00:11:27|
+|-|          5|          7|         16|      3.954|         80|00:11:27|
+|-|          6|          5|          9|      3.938|         87|00:05:12|
+|-|          7|          3|         16|      3.934|         92|00:02:56|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:          16	mean value:      3.934
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction populationSize maxEvaluations crossoverProbability mutationProbability .PARENT.
+16   16        GA             geh             24          60000                 0.57                0.35       NA
+
+
+# Elite candidates:
+   algorithm fitnessFunction populationSize maxEvaluations crossoverProbability mutationProbability
+16        GA             geh             24          60000                 0.57                0.35
+9         GA             geh             36          60000                 0.82                0.31
+1         GA             geh             54          60000                 0.62                0.19
+# 2018-11-09 03:42:46 -02: Iteration 2 of 3
+# experimentsUsedSoFar: 92
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 208
+# currentBudget: 104
+# nbCandidates: 14
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|         14|         11|       3.25|         14|00:07:26|
+|x|          2|         14|          9|       3.95|         28|00:07:30|
+|x|          3|         14|          5|      3.889|         42|00:07:29|
+|x|          4|         14|          5|      3.936|         56|00:07:29|
+|-|          5|         12|          1|      4.018|         70|00:07:31|
+|-|          6|         10|          1|      4.072|         82|00:07:18|
+|=|          7|         10|          9|      4.052|         92|00:06:10|
+|=|          8|         10|          9|      4.037|        102|00:06:13|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           9	mean value:      4.037
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction populationSize maxEvaluations crossoverProbability mutationProbability .PARENT.
+22   22        GA             geh             44          60000                 0.51                0.34       16
+
+
+# Elite candidates:
+   algorithm fitnessFunction populationSize maxEvaluations crossoverProbability mutationProbability
+22        GA             geh             44          60000                 0.51                0.34
+17        GA             geh             49          60000                 0.61                0.30
+24        GA             geh             24          60000                 0.72                0.27
+# 2018-11-09 04:39:57 -02: Iteration 3 of 3
+# experimentsUsedSoFar: 194
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 106
+# currentBudget: 106
+# nbCandidates: 13
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|         13|          9|       3.49|         13|00:06:21|
+|x|          2|         13|         12|      3.779|         26|00:06:21|
+|x|          3|         13|          1|      3.801|         39|00:06:21|
+|x|          4|         13|          1|      3.813|         52|00:06:21|
+|-|          5|          9|          1|       3.74|         65|00:06:20|
+|-|          6|          8|         11|      3.851|         74|00:03:30|
+|-|          7|          7|         11|      4.041|         82|00:03:22|
+|=|          8|          7|         12|      4.047|         89|00:02:49|
+|=|          9|          7|         12|      4.039|         96|00:02:49|
+|=|         10|          7|         11|      4.091|        103|00:02:50|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:          11	mean value:      4.091
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction populationSize maxEvaluations crossoverProbability mutationProbability .PARENT.
+35   35        GA             geh             50          60000                 0.51                0.31       22
+
+
+# Elite candidates:
+   algorithm fitnessFunction populationSize maxEvaluations crossoverProbability mutationProbability
+35        GA             geh             50          60000                 0.51                0.31
+36        GA             geh             41          60000                 0.68                0.33
+31        GA             geh             24          60000                 0.72                0.31
+# 2018-11-09 05:27:06 -02: Stopped because there is no enough budget left to race newly sampled configurations
+# Iteration: 4
+# nbIterations: 4
+# experimentsUsedSoFar: 297
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 3
+# currentBudget: 3
+# number of elites: 3
+# nbCandidates: 0
+# mu: 5
+# Best candidates
+   algorithm fitnessFunction populationSize maxEvaluations crossoverProbability mutationProbability
+35        GA             geh             50          60000                 0.51                0.31
+36        GA             geh             41          60000                 0.68                0.33
+31        GA             geh             24          60000                 0.72                0.31
+# Best candidates (as commandlines)
+1  --algorithm=GA --fitnessFunction=geh --populationSize=50 --maxEvaluations=60000 --crossoverProbability=0.51 --mutationProbability=0.31
+2  --algorithm=GA --fitnessFunction=geh --populationSize=41 --maxEvaluations=60000 --crossoverProbability=0.68 --mutationProbability=0.33
+3  --algorithm=GA --fitnessFunction=geh --populationSize=24 --maxEvaluations=60000 --crossoverProbability=0.72 --mutationProbability=0.31
+> 
+> 

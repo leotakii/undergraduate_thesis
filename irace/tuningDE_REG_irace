@@ -1,0 +1,254 @@
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+> require(devtools)
+> #install_version("irace", version = "1.07", repos = "http://cran.us.r-project.org")
+> library(irace)
+> irace.cmdline("--hook-run hook-runTested.bat")
+irace	version: 1.07.1202
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file "./tune-conf" has been found and will be read
+# 0 expression(s) specifying forbidden configurations read from 'C:/Users/Pc/Desktop/irace2018/irace/forbidden'
+# 2018-11-26 12:57:02 -02: Initialization
+# nbIterations: 3
+# minNbSurvival: 3
+# nbParameters: 3
+# seed: 624001481
+# confidence level: 0.95
+# remainingBudget: 500
+# mu: 5
+
+# 2018-11-26 12:57:03 -02: Iteration 1 of 3
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 500
+# currentBudget: 166
+# nbCandidates: 27
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|         27|         23|      956.6|         27|00:16:10|
+|x|          2|         27|         23|      953.4|         54|00:15:24|
+|x|          3|         27|         23|      950.4|         81|00:15:12|
+|x|          4|         27|         23|      955.1|        108|00:15:45|
+|-|          5|          1|         23|        954|        135|00:14:47|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:          23	mean value:        954
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction crossoverProbability differentialWeight populationSize .PARENT.
+23   23        DE             reg                0.525                0.2            313       NA
+
+
+# Elite candidates:
+   algorithm fitnessFunction crossoverProbability differentialWeight populationSize
+23        DE             reg                0.525                0.2            313
+# 2018-11-26 14:14:25 -02: Iteration 2 of 3
+# experimentsUsedSoFar: 135
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 365
+# currentBudget: 182
+# nbCandidates: 26
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|         26|          1|      948.8|         26|00:15:23|
+|x|          2|         26|          9|      956.5|         52|00:17:00|
+|x|          3|         26|          9|      960.4|         78|00:17:46|
+|x|          4|         26|          1|      961.2|        104|00:17:32|
+|-|          5|          4|          1|      958.2|        130|00:17:30|
+|=|          6|          4|          1|      957.9|        134|00:03:21|
+|=|          7|          4|          1|      958.4|        138|00:03:17|
+|=|          8|          4|          1|      959.9|        142|00:03:18|
+|=|          9|          4|          1|      959.3|        146|00:03:09|
+|-|         10|          3|          1|      958.2|        150|00:03:05|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           1	mean value:      958.2
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction crossoverProbability differentialWeight populationSize .PARENT.
+23   23        DE             reg                0.525                0.2            313       NA
+
+
+# Elite candidates:
+   algorithm fitnessFunction crossoverProbability differentialWeight populationSize
+23        DE             reg                0.525              0.200            313
+35        DE             reg                0.611              0.187            526
+33        DE             reg                0.535              0.171            447
+# 2018-11-26 15:55:50 -02: Iteration 3 of 3
+# experimentsUsedSoFar: 285
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 215
+# currentBudget: 215
+# nbCandidates: 26
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|         26|         22|        945|         26|00:16:24|
+|x|          2|         26|         22|      943.3|         52|00:15:58|
+|x|          3|         26|         22|        942|         78|00:15:10|
+|x|          4|         26|         22|      943.5|        104|00:16:55|
+|-|          5|          3|         22|      945.6|        130|00:16:06|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:          22	mean value:      945.6
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction crossoverProbability differentialWeight populationSize .PARENT.
+71   71        DE             reg                0.523              0.287            114       23
+
+
+# Elite candidates:
+   algorithm fitnessFunction crossoverProbability differentialWeight populationSize
+71        DE             reg                0.523              0.287            114
+23        DE             reg                0.525              0.200            313
+53        DE             reg                0.592              0.193            433
+# 2018-11-26 17:16:26 -02: Iteration 4 of 4
+# experimentsUsedSoFar: 415
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 85
+# currentBudget: 85
+# nbCandidates: 9
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|          9|          1|        941|          9|00:06:22|
+|x|          2|          9|          1|      941.7|         18|00:06:16|
+|x|          3|          9|          1|      941.9|         27|00:06:11|
+|x|          4|          9|          1|      943.2|         36|00:06:11|
+|-|          5|          2|          1|        942|         45|00:06:12|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           1	mean value:        942
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction crossoverProbability differentialWeight populationSize .PARENT.
+71   71        DE             reg                0.523              0.287            114       23
+
+
+# Elite candidates:
+   algorithm fitnessFunction crossoverProbability differentialWeight populationSize
+71        DE             reg                0.523              0.287            114
+76        DE             reg                0.544              0.201            366
+# 2018-11-26 17:47:41 -02: Iteration 5 of 5
+# experimentsUsedSoFar: 460
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 40
+# currentBudget: 40
+# nbCandidates: 4
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|          4|          1|      939.1|          4|00:03:01|
+|x|          2|          4|          1|      951.9|          8|00:03:03|
+|x|          3|          4|          1|      947.4|         12|00:03:03|
+|x|          4|          4|          1|        949|         16|00:03:02|
+|-|          5|          3|          1|      946.1|         20|00:03:03|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           1	mean value:      946.1
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction crossoverProbability differentialWeight populationSize .PARENT.
+71   71        DE             reg                0.523              0.287            114       23
+
+
+# Elite candidates:
+   algorithm fitnessFunction crossoverProbability differentialWeight populationSize
+71        DE             reg                0.523              0.287            114
+76        DE             reg                0.544              0.201            366
+83        DE             reg                0.522              0.293            132
+# 2018-11-26 18:02:55 -02: Stopped because there is no enough budget left to race newly sampled configurations
+# Iteration: 6
+# nbIterations: 6
+# experimentsUsedSoFar: 480
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 20
+# currentBudget: 20
+# number of elites: 3
+# nbCandidates: 2
+# mu: 5
+# Best candidates
+   algorithm fitnessFunction crossoverProbability differentialWeight populationSize
+71        DE             reg                0.523              0.287            114
+76        DE             reg                0.544              0.201            366
+83        DE             reg                0.522              0.293            132
+# Best candidates (as commandlines)
+1  --algorithm=DE --fitnessFunction=reg --populationSize=114 --crossoverProbability=0.523 --differentialWeight=0.287
+2  --algorithm=DE --fitnessFunction=reg --populationSize=366 --crossoverProbability=0.544 --differentialWeight=0.201
+3  --algorithm=DE --fitnessFunction=reg --populationSize=132 --crossoverProbability=0.522 --differentialWeight=0.293
+> 

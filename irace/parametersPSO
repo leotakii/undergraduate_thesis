@@ -1,0 +1,94 @@
+## Parameter configuration file for Iterated Race.
+##
+## The format is one parameter per line. Each line contains:
+##
+## 1: Name of the parameter. An unquoted alphanumeric string,
+##    example: ants
+
+## 2: Switch to pass the parameter. A quoted (possibly empty) string, 
+##    if the value and the switch must be separated, add a space at
+##    the end of the string. Example : "--version1 --ants "
+
+## 3: Type. An unquoted single letter, among 
+##     i: Integer, c: categorical, o: ordinal, r: real.
+
+## 4: For c and o: All possible values, that is, a variable number of
+##    quoted or unquoted strings separated by commas within
+##    parenthesis. Empty strings and strings containing commas or
+##    spaces must be quoted.
+##    For i,r: a pair of unquoted numbers representing minimum and
+##    maximum values. 
+
+## 5: A conditional parameter can be defined according to the values of
+##    one or several other parameters.  This is done by adding a
+##    character '|' followed by an R expression involving the names of
+##    other parameters. This expression must return TRUE if the 
+##    condition is satisfied, FALSE otherwise.
+
+## ----> Leave a blank line in the end like EOF <----
+
+# 1:                 2:                        3: 4:      5:
+
+##metaheuristicas
+
+algorithm            "--algorithm="             c  (PSO)
+#algorithm            "--algorithm="             c  (DE)
+#algorithm            "--algorithm="             c  (GA)
+
+##funcoes a serem minimizadas
+
+##funcao  (25 do Luciano)
+#fitnessFunction      "--fitnessFunction="       c  (folga)
+
+##funcao  (26 do Luciano)
+fitnessFunction      "--fitnessFunction="        c  (reg)
+
+##funcao  (27 do Luciano)
+#fitnessFunction       "--fitnessFunction="      c  (geh)  
+
+######DOMINIO PARA O GA#########################################
+#populationSize        "--populationSize="        i  (20,100) | algorithm == "GA"
+
+
+##parametros do GA 
+##DOMINIOS PADRAO
+#crossoverProbability "--crossoverProbability="  r  (0.01,1.0) 
+#mutationProbability  "--mutationProbability="   r  (0.01,1.0)
+
+
+########DOMINIO EMPIRICO DO GA ############
+#crossoverProbability "--crossoverProbability="  r  (0.7,1.0) | algorithm == "GA"
+#mutationProbability  "--mutationProbability="   r  (0.001,0.02) | algorithm == "GA"
+
+
+###############################################################
+##parametros do DE 
+#populationSize        "--populationSize="        i  (100,2000) | algorithm == "DE"
+
+#crossoverProbability "--crossoverProbability="   r  (0.5,1.0)
+ 
+#differentialWeight   "--differentialWeight="     r  (0.01,1.0)
+
+
+
+
+################################################################
+
+
+##parametros do PSO 
+populationSize        "--populationSize="        i  (100,2500) | algorithm == "PSO"
+
+c1                    "--c1="                   r  (0.01,2.00) | algorithm == "PSO"
+c2                    "--c2="                   r  (0.01,2.00) | algorithm == "PSO"
+wIn                   "--wIn="                  r  (0.01,1.0) | algorithm == "PSO"
+wF                    "--wF="                   r  (0.01,1.0) | algorithm == "PSO"
+
+
+#######PSO com reset (NOT USING)##############################
+#itReset               "--itReset="              i  (1,500)
+#pReset                "--pReset="               r  (0.01,0.99)
+
+
+#versao original
+
+

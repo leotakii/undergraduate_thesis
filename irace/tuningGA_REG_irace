@@ -1,0 +1,254 @@
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+> require(devtools)
+> #install_version("irace", version = "1.07", repos = "http://cran.us.r-project.org")
+> library(irace)
+> irace.cmdline("--hook-run hook-runTested.bat")
+irace	version: 1.07.1202
+********************************************************************************
+* irace: An implementation in R of Iterated Race                               *
+* Copyright (C) 2010-2014                                                      *
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@ulb.ac.be>                      *
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>                   *
+*                                                                              *
+* This is free software, and you are welcome to redistribute it under certain  *
+* conditions.  See the GNU General Public License for details. There is NO     *
+* warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  *
+*                                                                              *
+* irace builds upon previous code from the race package                        *
+* Copyright (C) 2003 Mauro Birattari                                           *
+********************************************************************************
+Warning: A default configuration file "./tune-conf" has been found and will be read
+# 0 expression(s) specifying forbidden configurations read from 'C:/Users/Pc/Desktop/irace2018/irace/forbidden'
+# 2018-12-02 17:51:25 -02: Initialization
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 8
+# seed: 624001481
+# confidence level: 0.95
+# remainingBudget: 300
+# mu: 5
+
+# 2018-12-02 17:51:25 -02: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbCandidates: 10
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|         10|          7|      947.8|         10|00:03:35|
+|x|          2|         10|          5|      963.8|         20|00:03:37|
+|x|          3|         10|          5|      957.6|         30|00:03:36|
+|x|          4|         10|          7|      956.8|         40|00:03:36|
+|-|          5|          2|          5|      957.5|         50|00:03:36|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           5	mean value:      957.5
+
+Description of the selected candidate:
+  .ID. algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA .PARENT.
+5    5        GA             reg             43                0.744               0.005 2-tournament singlepoint MaxEquals2Uniform           SteadyState            NA       NA
+
+
+# Elite candidates:
+  algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA
+5        GA             reg             43                0.744               0.005 2-tournament singlepoint MaxEquals2Uniform           SteadyState            NA
+7        GA             reg             45                0.718               0.004 5-tournament singlepoint MaxEquals2Uniform           SteadyState            NA
+# 2018-12-02 18:09:28 -02: Iteration 2 of 5
+# experimentsUsedSoFar: 50
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 250
+# currentBudget: 62
+# nbCandidates: 8
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|          8|          4|      944.5|          8|00:03:23|
+|x|          2|          8|          4|      949.1|         16|00:03:26|
+|x|          3|          8|          4|      948.7|         24|00:03:24|
+|x|          4|          8|          4|      948.8|         32|00:03:26|
+|-|          5|          1|          4|      948.7|         40|00:03:29|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           4	mean value:      948.7
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA .PARENT.
+12   12        GA             reg             51                0.805               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.173        5
+
+
+# Elite candidates:
+   algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA
+12        GA             reg             51                0.805               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.173
+# 2018-12-02 18:26:38 -02: Iteration 3 of 5
+# experimentsUsedSoFar: 90
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 210
+# currentBudget: 70
+# nbCandidates: 8
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|          8|          2|      943.6|          8|00:05:39|
+|x|          2|          8|          1|      946.5|         16|00:05:30|
+|x|          3|          8|          1|      944.9|         24|00:05:33|
+|x|          4|          8|          1|      944.9|         32|00:05:54|
+|-|          5|          3|          1|      945.6|         40|00:06:02|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           1	mean value:      945.6
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA .PARENT.
+12   12        GA             reg             51                0.805               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.173        5
+
+
+# Elite candidates:
+   algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA
+12        GA             reg             51                0.805               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.173
+17        GA             reg             45                0.802               0.017 5-tournament singlepoint MaxEquals2Uniform          Generational         0.117
+20        GA             reg             50                0.871               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.180
+# 2018-12-02 18:55:18 -02: Iteration 4 of 5
+# experimentsUsedSoFar: 130
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 170
+# currentBudget: 85
+# nbCandidates: 9
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|          9|          9|      942.7|          9|00:06:58|
+|x|          2|          9|          1|      944.9|         18|00:06:33|
+|x|          3|          9|          1|      945.9|         27|00:06:06|
+|x|          4|          9|          6|      945.7|         36|00:05:54|
+|-|          5|          7|          6|      944.6|         45|00:06:54|
+|=|          6|          7|          6|      944.4|         52|00:05:49|
+|=|          7|          7|          6|      943.8|         59|00:06:01|
+|=|          8|          7|          6|      944.2|         66|00:05:57|
+|=|          9|          7|          6|      943.6|         73|00:05:46|
+|=|         10|          7|          6|        944|         80|00:06:03|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           6	mean value:        944
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA .PARENT.
+26   26        GA             reg             56                0.713               0.004 5-tournament singlepoint MaxEquals2Uniform          Generational         0.084       17
+
+
+# Elite candidates:
+   algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA
+26        GA             reg             56                0.713               0.004 5-tournament singlepoint MaxEquals2Uniform          Generational         0.084
+28        GA             reg             89                0.751               0.016 5-tournament singlepoint MaxEquals2Uniform          Generational         0.094
+12        GA             reg             51                0.805               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.173
+20        GA             reg             50                0.871               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.180
+29        GA             reg             86                0.895               0.015 5-tournament singlepoint MaxEquals2Uniform          Generational         0.198
+# 2018-12-02 19:57:24 -02: Iteration 5 of 5
+# experimentsUsedSoFar: 210
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 90
+# currentBudget: 90
+# nbCandidates: 9
+
+                            Markers:
+                               x No test is performed.
+                               - The test is performed and
+                                 some candidates are discarded.
+                               = The test is performed but
+                                 no candidate is discarded.
+
++-+-----------+-----------+-----------+-----------+-----------+--------+
+| |       Task|      Alive|       Best|  Mean best| Exp so far|Run Time|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+|x|          1|          9|          2|      940.9|          9|00:07:56|
+|x|          2|          9|          9|      941.4|         18|00:07:54|
+|x|          3|          9|          9|      939.8|         27|00:07:54|
+|x|          4|          9|          9|      939.6|         36|00:08:05|
+|-|          5|          2|          9|      939.7|         45|00:07:53|
++-+-----------+-----------+-----------+-----------+-----------+--------+
+
+Selected candidate:           9	mean value:      939.7
+
+Description of the selected candidate:
+   .ID. algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA .PARENT.
+33   33        GA             reg             74                0.792               0.009 5-tournament singlepoint MaxEquals2Uniform          Generational         0.089       26
+
+
+# Elite candidates:
+   algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA
+33        GA             reg             74                0.792               0.009 5-tournament singlepoint MaxEquals2Uniform          Generational         0.089
+20        GA             reg             50                0.871               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.180
+# 2018-12-02 20:37:08 -02: Stopped because there is no enough budget left to race more than the minimum (5)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 6
+# nbIterations: 6
+# experimentsUsedSoFar: 255
+# timeUsedSoFar: 0
+# timeEstimate: 0
+# remainingBudget: 45
+# currentBudget: 45
+# number of elites: 2
+# nbCandidates: 4
+# mu: 5
+# Best candidates
+   algorithm fitnessFunction populationSize crossoverProbability mutationProbability  selectionGA crossoverGA        mutationGA generationReplacement elitistRateGA
+33        GA             reg             74                0.792               0.009 5-tournament singlepoint MaxEquals2Uniform          Generational         0.089
+20        GA             reg             50                0.871               0.019 5-tournament singlepoint MaxEquals2Uniform          Generational         0.180
+# Best candidates (as commandlines)
+1  --algorithm=GA --fitnessFunction=reg --populationSize=74 --crossoverProbability=0.792 --mutationProbability=0.009 --selectionGA=5-tournament --crossoverGA=singlepoint --mutationGA=MaxEquals2Uniform --generationReplacement=Generational --elitistRateGA=0.089
+2  --algorithm=GA --fitnessFunction=reg --populationSize=50 --crossoverProbability=0.871 --mutationProbability=0.019 --selectionGA=5-tournament --crossoverGA=singlepoint --mutationGA=MaxEquals2Uniform --generationReplacement=Generational --elitistRateGA=0.18
+> 

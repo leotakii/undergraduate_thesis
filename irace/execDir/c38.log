@@ -1,0 +1,119 @@
+--candidateId=38
+--directory=C:\Users\Pc\Desktop\irace2018\irace\execDir
+--algorithm=DE
+--fitnessFunction=reg
+--populationSize=551
+--crossoverProbability=0.609
+--differentialWeight=0.483
+26/11, 15:25:31
+[HookRun] Parameters used:
+--directory=execDir
+--algorithm=DE
+--fitnessFunction=reg
+--candidateId=38
+--populationSize=551
+--maxEvaluations=0
+--crossoverProbability=0.609
+--differentialWeight=0.483
+
+Teste Curitiba!
+OK: Recuperou objeto ODMatrix de 'cwb odmatrix.dat'!
+
+OK: Recuperou objeto VirtualSensors de 'cwb virt sen.dat'!
+
+OK: Mudando teste para rede fechada...
+ATENCAO: arestasSensor reduzidas para 71, por ser numero maximo de sensores da rede cadastrada.
+PROC: Preparando para iniciar DE_71s__0t0... 26/11, 15:25:31
+ERROR: Não há registros de viagens para recuperar! (ODmatrix.calcMatrixClust)
+INFO: Return antecipado, n=arestasSensorGAMM=71 e t=tempoPrioriGAMM=0; mov.lenght=71 (VirtualSensors.gerArestaMaisMovimentadasIndex)
+INFO: descobrirODparIndArestaMaisMov = 1074 casos! - 191/900 pares O-D cobertos
+INFO: Existem 1073 relações Prob_OD_aresta!
+OK: Iniciando DE com 1 runs! Population size: 551
+Generations: 5444
+OD =900
+Sensores=71
+DE_71s__0t0; 26/11, 15:25:31
+STATS: Desvio fluxos: Min. -1192,744991; Mean. -137,117377; Max. 1345,016571; p5 -1013,13514; p20 -591,977556; p35 -383,626042; p50 -179,013368; p65 36,925826; p80 322,730303; p95 823,708948; 
+RUN DE_71s__0t0 1/1: Menor custo inicial é 20384.04880260001(RMSE: 438.5646131869324; MAE: 22.379385240303197; GEH: 12.809874355858357) id do melhor indivíduo=133
+Melhor da geracao 3: reg(3) = 19798.883585953197 585.165216646812
+Melhor da geracao 5: reg(5) = 17344.940572851123 2453.9430131020745
+Melhor da geracao 8: reg(8) = 16744.703484736005 600.2370881151182
+Melhor da geracao 19: reg(19) = 16485.51084421308 259.1926405229242
+Melhor da geracao 29: reg(29) = 13959.047292967583 2526.463551245497
+Melhor da geracao 46: reg(46) = 13957.188702454385 1.8585905131985783
+Melhor da geracao 54: reg(54) = 13821.962511450825 135.2261910035595
+Melhor da geracao 57: reg(57) = 13652.742975110636 169.21953634018973
+Melhor da geracao 68: reg(68) = 13245.572456146752 407.1705189638833
+Melhor da geracao 73: reg(73) = 12540.26575385105 705.306702295702
+Melhor da geracao 78: reg(78) = 12000.499275613547 539.7664782375032
+Melhor da geracao 95: reg(95) = 11279.131445711342 721.3678299022049
+Melhor da geracao 117: reg(117) = 10738.707335703648 540.4241100076943
+Melhor da geracao 164: reg(164) = 9554.184618448902 1184.5227172547457
+Melhor da geracao 200: reg(200) = 9294.548804070564 259.6358143783382
+Melhor da geracao 243: reg(243) = 9202.402182291968 92.14662177859645
+Melhor da geracao 254: reg(254) = 8917.6037148954 284.7984673965675
+Melhor da geracao 272: reg(272) = 8497.468708294371 420.1350066010291
+Melhor da geracao 309: reg(309) = 8341.355486380111 156.11322191426007
+Melhor da geracao 330: reg(330) = 7996.065140400848 345.2903459792633
+Melhor da geracao 352: reg(352) = 7952.560030343066 43.505110057782076
+Melhor da geracao 363: reg(363) = 7763.985335941922 188.57469440114346
+Melhor da geracao 364: reg(364) = 7642.094827661017 121.89050828090512
+Melhor da geracao 372: reg(372) = 7403.095333858702 238.99949380231465
+Melhor da geracao 441: reg(441) = 6922.857229827996 480.2381040307064
+Melhor da geracao 489: reg(489) = 6811.9294869876885 110.92774284030747
+Melhor da geracao 522: reg(522) = 6173.177055719803 638.7524312678852
+Melhor da geracao 568: reg(568) = 6015.808861581414 157.3681941383893
+Melhor da geracao 645: reg(645) = 5623.553543637063 392.2553179443512
+Melhor da geracao 719: reg(719) = 5349.931445249797 273.6220983872654
+Melhor da geracao 789: reg(789) = 5304.339976150548 45.59146909924948
+Melhor da geracao 852: reg(852) = 5163.283212411048 141.05676373949973
+Melhor da geracao 878: reg(878) = 5126.299814949665 36.98339746138299
+Melhor da geracao 881: reg(881) = 5123.741144200631 2.5586707490338085
+Melhor da geracao 897: reg(897) = 4917.925808089882 205.81533611074974
+Melhor da geracao 913: reg(913) = 4877.622370745958 40.30343734392409
+Melhor da geracao 920: reg(920) = 4748.8252900800135 128.79708066594412
+Melhor da geracao 998: reg(998) = 4411.862148123871 336.96314195614286
+Melhor da geracao 1175: reg(1175) = 4374.287839135106 37.57430898876464
+Melhor da geracao 1187: reg(1187) = 4132.023255903323 242.26458323178304
+Melhor da geracao 1261: reg(1261) = 4123.47860196972 8.544653933602604
+Melhor da geracao 1402: reg(1402) = 4110.425877236592 13.052724733128343
+Melhor da geracao 1449: reg(1449) = 4037.488188957118 72.93768827947406
+Melhor da geracao 1520: reg(1520) = 3957.4872540917945 80.00093486532342
+Melhor da geracao 1526: reg(1526) = 3957.3656623178495 0.12159177394505605
+Melhor da geracao 1528: reg(1528) = 3896.0337745490424 61.331887768807064
+Melhor da geracao 1597: reg(1597) = 3870.403634444817 25.630140104225575
+Melhor da geracao 1609: reg(1609) = 3855.3707419789985 15.03289246581835
+Melhor da geracao 1648: reg(1648) = 3762.458173112904 92.91256886609426
+Melhor da geracao 1749: reg(1749) = 3760.44427841624 2.0138946966640106
+Melhor da geracao 1764: reg(1764) = 3626.1186616973 134.32561671894018
+Melhor da geracao 1884: reg(1884) = 3487.3356086952076 138.7830530020924
+Melhor da geracao 2093: reg(2093) = 3466.1102204233875 21.225388271820066
+Melhor da geracao 2284: reg(2284) = 3438.9073802504013 27.20284017298627
+Melhor da geracao 2453: reg(2453) = 3239.1484616897305 199.75891856067074
+Melhor da geracao 2541: reg(2541) = 3201.083645295005 38.06481639472531
+Melhor da geracao 2619: reg(2619) = 2909.134068708468 291.9495765865372
+Melhor da geracao 3589: reg(3589) = 2830.2616551559827 78.87241355248534
+Melhor da geracao 3718: reg(3718) = 2799.040336613852 31.221318542130575
+Melhor da geracao 4290: reg(4290) = 2797.325295894714 1.71504071913796
+Melhor da geracao 4311: reg(4311) = 2797.3130815503673 0.01221434434683033
+Melhor da geracao 4360: reg(4360) = 2766.689320827471 30.62376072289635
+Melhor da geracao 4430: reg(4430) = 2731.3221208588393 35.36719996863167
+Melhor da geracao 4642: reg(4642) = 2720.023453780283 11.298667078556264
+Melhor da geracao 4694: reg(4694) = 2687.6817241844183 32.34172959586476
+Melhor da geracao 4890: reg(4890) = 2653.337769191351 34.3439549930672
+Melhor da geracao 5173: reg(5173) = 2627.82469614321 25.513073048140996
+Melhor da geracao 5193: reg(5193) = 2607.376005087472 20.44869105573798
+Melhor da geracao 5283: reg(5283) = 2552.2393134638423 55.13669162362976
+RUN DE_71s__0t0 1/1: Menor  custo  final é 2552.2393134638423
+---26/11 15:27:16-----------------------------------------------------
+reg(objetivo): 2552.2393134638423
+RMSE: 979.0241560850616
+MAE: 26.986791234589333
+GEH: 4.513635255632565
+pGEH5: 0.7464788732394366
+R2Links: 0.9025685062917227
+R2Odm: 0.045358684918307766
+------------------------------------------------------ ´p=18
+
+ALERT: Salvando última MOD resposta. Não a melhor.
+Fitness final (reg) = 2552.2393134638423

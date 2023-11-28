@@ -1,0 +1,2 @@
+--algorithm=DE --fitnessFunction=geh --populationSize=1000 --maxEvaluations=5000 --candidateId=1 --crossoverProbability=0.7 --differentialWeight=0.1
+

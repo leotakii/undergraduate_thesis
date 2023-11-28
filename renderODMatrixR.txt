@@ -1,0 +1,4 @@
+odMatrix <- read.csv(file="VAR_1", header = TRUE, sep = " ")
+m = matrix(odMatrix,30,30)    
+image(m, useRaster=TRUE, axes=FALSE)
+

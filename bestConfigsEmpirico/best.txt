@@ -1,0 +1,2 @@
+~ 2.00
+--algorithm=DE --fitnessFunction=reg --populationSize=250 --maxEvaluations=10000 --candidateId=1 --crossoverProbability=0.85 --differentialWeight=0.3 

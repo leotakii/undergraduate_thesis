@@ -1,0 +1,8 @@
+R
+> load("acotsp-execdir/irace.Rdata")
+R
+> names(tunerResults)
+R
+> print(tunerResults$experiments)
+R
+> print(tunerResults$allCandidates)
