@@ -1,3 +1,11 @@
+Undergraduate Thesis: Estimation of origin-destination matrices related to automotive traffic in a region of Curitiba.
+The paper was about estimating a Macro Traffic Flow Model, an optimization problem and it was focused on Directed Graphs, Metaheuristics (PSO, GA, Differential Evolution) and Hyper-Heuristics (Parameter Tuning).
+
+
+Presentation (Portuguese): https://www.overleaf.com/read/sdmfrmxgmdtp#96b5dd
+Paper (Portuguese): https://www.overleaf.com/read/mdgxhxgnnxxv#cab998
+
+
 # irace
 ## A simple example for the IRACE application with Java programs
 
